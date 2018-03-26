@@ -1,0 +1,81 @@
+/* GENERAL
+========================= */
+body {
+  font-family: 'Comfortaa', sans-serif;
+}
+h1 {font-size: 48px;}
+h2 {font-size: 40px;}
+h3 {font-size: 32px;}
+h4 {font-size: 24px;}
+h5 {font-size: 16px;}
+h6 {font-size: 16px;}
+
+.button {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000;
+  background: #c9d0c7;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.5;
+}
+
+/* HEADER
+========================= */
+.header {
+  padding: 20px 0;
+  background-image: url('../img/stork.png');
+  background-position: 98% 10px;
+  background-repeat: no-repeat;
+  background-size: 90px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.logo {
+  display: inline-block;
+  width: 300px;
+}
+
+/* CONTENT
+========================= */
+.content {
+  position: relative;
+}
+.content-inner {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, 0);
+}
+.arriving-soon {
+  font-size: 130px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.40;
+}
+.background {
+  display: block;
+  width: 100%;
+}
+
+/* RESPONSIVE
+========================= */
+@media screen and (max-width: 768px) {
+  .header {
+    background-position: 98% 140px;
+    background-size: 60px;
+  }
+  .logo {
+    margin-bottom: 40px;
+  }
+  .arriving-soon {
+    font-size: 70px;
+  }
+}
