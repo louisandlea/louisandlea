@@ -28,17 +28,23 @@ h6 {font-size: 16px;}
 /* HEADER
 ========================= */
 .header {
-  padding: 20px 0;
-  background-image: url('../img/stork.svg');
-  background-position: 98% 10px;
-  background-repeat: no-repeat;
-  background-size: 90px;
+  padding: 30px;
   background-color: #fff;
   overflow: hidden;
 }
 .logo {
   display: inline-block;
-  width: 300px;
+  width: 500px;
+}
+.tagline {
+  display: inline-block;
+  font-size: 32px;
+}
+.stork {
+  position: relative;
+  bottom: -40px;
+  display: inline-block;
+  width: 100%;
 }
 
 /* CONTENT
@@ -48,17 +54,16 @@ h6 {font-size: 16px;}
 }
 .content-inner {
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   left: 50%;
   z-index: 5;
   width: 100%;
-  text-align: center;
+  padding: 30px 60px;
   transform: translate(-50%, 0);
 }
 .arriving-soon {
-  font-size: 130px;
-  text-align: center;
-  color: #fff;
+  display: block;
+  width: 100%;
   opacity: 0.40;
 }
 .background {
@@ -68,20 +73,28 @@ h6 {font-size: 16px;}
 
 /* RESPONSIVE
 ========================= */
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 350px;
+  }
+  .tagline {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
-    padding: 50px 0;
-    background-position: 98% 160px;
-    background-size: 60px;
-  }
-  .header h4 {
-    font-size: 15px;
+    padding: 50px 30px 0 30px;
   }
   .logo {
-    margin-bottom: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
   }
-  .arriving-soon {
-    font-size: 40px;
+  .tagline {
+    font-size: 18px;
+  }
+  .stork {
+    bottom: -10px;
   }
   .content {
     height: 400px;
@@ -92,17 +105,18 @@ h6 {font-size: 16px;}
   .content-inner {
     bottom: 0;
     height: 100%;
+    text-align: center;
   }
   #open-popup {
-    top: -18px;
+    top: -47px;
   }
   .arriving-soon {
     position: absolute;
     bottom: 20px;
-    left: 0;
+    left: 20px;
     z-index: 5;
     text-align: center;
-    width: 100%;
+    width: calc(100% - 40px);
   }
   .background {
     display: none;
