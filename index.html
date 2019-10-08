@@ -16,51 +16,35 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="header">
-        <div class="grid-middle">
-          <div class="col-6_md-5_sm-12 text-center-sm">
-            <img class="logo" src="img/logo.svg" />
-          </div>
-          <div class="col-5_md-5_sm-10 text-right text-left-sm">
-            <h4 class="tagline">Preparing Moms for their new arrival.</h4>
-          </div>
-          <div class="col-1_md-2">
-              <img class="stork" src="img/stork.svg" />
+      <div class="container">
+
+        <div class="header text-center">
+          <h1 id="Title" class="title">Hello there mama</h1>
+          <h2 class="subtitle">Discover our beautiful gift boxes from Hospital Essentials to Baby’s First Birthday.</h2>
+        </div>
+
+        <div class="content">
+          <img class="background" src="img/coming-soon-box.jpg" />
+          <div class="content__info">
+            <h3 class="content__info-heading">Arriving<br />November 2019</h3>
+            <img class="content__info-logo" src="img/logo.png" />
           </div>
         </div>
+
       </div>
-      <div class="content">
-        <div class="content-inner">
-          <div id="open-popup" class="button">notify me</div>
-          <img class="arriving-soon" src="img/arriving-soon.svg" />
-        </div>
-        <img class="background" src="img/background.jpg" />
-      </div>
-      <div class="footer">
-        
-        </div>
-    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- <script src="js/plugins.js"></script> -->
-    <script src="js/main.js"></script>
 
     <!-- Mailchimp popup form -->
-    <script type="text/javascript" src="https://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script>
-      function showMailingPopUp() {
-          require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"b9965b0bf49d750b94b22e707","lid":"f53dfe01a2"}) })
-          document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-      };
-      
-      document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-    </script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"b9965b0bf49d750b94b22e707","lid":"f53dfe01a2","uniqueMethods":true}) })</script>
+    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+    <!--<script>
         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+    </script>-->
   </body>
 </html>
