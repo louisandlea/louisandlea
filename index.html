@@ -40,7 +40,7 @@
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script type="text/javascript">
       function showMailingPopUp() {
-        require(["mojo/signup-forms/Loader"], function(L){
+        window.dojoRequire(["mojo/signup-forms/Loader"], function(L){
           L.start({
             "baseUrl": "mc.us12.list-manage.com",
             "uuid": "b9965b0bf49d750b94b22e707",
