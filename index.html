@@ -20,7 +20,7 @@
 
         <div class="header text-center">
           <h1 id="Title" class="title">Hello there mama</h1>
-          <h2 class="subtitle">Discover our beautiful gift boxes from Hospital Essentials to Baby’s First Birthday.</h2>
+          <h2 class="subtitle">Discover our beautiful gift boxes from hospital essentials to baby’s first birthday.</h2>
         </div>
 
         <div class="content">
@@ -37,7 +37,21 @@
     <!-- <script src="js/plugins.js"></script> -->
 
     <!-- Mailchimp popup form -->
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"b9965b0bf49d750b94b22e707","lid":"f53dfe01a2","uniqueMethods":true}) })</script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+      function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L){
+          L.start({
+            "baseUrl": "mc.us12.list-manage.com",
+            "uuid": "b9965b0bf49d750b94b22e707",
+            "lid": "f53dfe01a2",
+            "uniqueMethods": true
+          })
+          document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        })
+      }
+      showMailingPopUp();
+    </script>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!--<script>
