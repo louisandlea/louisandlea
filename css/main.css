@@ -48,6 +48,9 @@ h6 {font-size: 16px;}
   text-transform: lowercase;
 }
 .subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
   font-size: 28px;
   line-height: 36px;
   color: #000;
